@@ -10,17 +10,20 @@ import { ChatGPTAPI } from '../../src'
 
 dotenv.config()
 
-// var privateCrt = fs.readFileSync(path.join('D:\\laixiao/soft/ssl/Nginx/diluapp.cn_bundle.crt'), 'utf8');
-// var privateKey = fs.readFileSync(path.join('D:\\laixiao/soft/ssl/Nginx/diluapp.cn.key'), 'utf8');
 var privateCrt = fs.readFileSync(
-  path.join(
-    process.cwd(),
-    'C:UsersAdministratorDesktopsslNginxdiluapp.cn_bundle.crt'
-  ),
+  path.join('D:\\laixiao/soft/ssl/Nginx/diluapp.cn_bundle.crt'),
   'utf8'
 )
 var privateKey = fs.readFileSync(
-  path.join(process.cwd(), 'C:UsersAdministratorDesktopsslNginxdiluapp.cn.key'),
+  path.join('D:\\laixiao/soft/ssl/Nginx/diluapp.cn.key'),
+  'utf8'
+)
+var privateCrt = fs.readFileSync(
+  path.join('C:\\Users/Administrator/Desktop/ssl/Nginx/diluapp.cn_bundle.crt'),
+  'utf8'
+)
+var privateKey = fs.readFileSync(
+  path.join('C:\\Users/Administrator/Desktop/ssl/Nginx/diluapp.cn.key'),
   'utf8'
 )
 console.log(privateCrt, privateKey)
