@@ -49,3 +49,4 @@ next-env.d.ts
 # data dumps
 out/
 /xiaoxiao/ssl
+/xiaoxiao/Nginx
