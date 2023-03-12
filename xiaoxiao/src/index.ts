@@ -17,8 +17,7 @@ async function main() {
     apiBaseUrl: 'https://openapi.ssiic.com/v1'
   })
 
-  const prompt =
-    'Write a python version of bubble sort. Do not include example usage.'
+  const prompt = 'git的子存储库是什么'
 
   console.log(prompt)
   const res = await api.sendMessage(prompt, {
