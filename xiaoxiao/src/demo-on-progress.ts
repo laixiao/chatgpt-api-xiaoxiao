@@ -1,6 +1,6 @@
 import dotenv from 'dotenv-safe'
 
-import { ChatGPTAPI } from '../src'
+import { ChatGPTAPI } from '../../src'
 
 dotenv.config()
 
@@ -14,8 +14,7 @@ dotenv.config()
 async function main() {
   const api = new ChatGPTAPI({ apiKey: process.env.OPENAI_API_KEY, apiBaseUrl: "https://openapi.ssiic.com/v1" })
 
-  const prompt =
-    'Write a python version of bubble sort. Do not include example usage.'
+  const prompt = 'Write a python version of bubble sort. Do not include example usage.'
 
   console.log(prompt)
   const res = await api.sendMessage(prompt, {
